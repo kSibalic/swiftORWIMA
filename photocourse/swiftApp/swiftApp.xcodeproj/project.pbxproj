@@ -40,6 +40,7 @@
 		45D08D802B55DF7200EA63B1 /* SkillsCollapse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D08D7F2B55DF7200EA63B1 /* SkillsCollapse.swift */; };
 		45D08D822B55F17C00EA63B1 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D08D812B55F17C00EA63B1 /* ExperienceView.swift */; };
 		45D08D842B55F46400EA63B1 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D08D832B55F46400EA63B1 /* ExperiencesView.swift */; };
+		45E2A88F2B6164090020E52D /* PortfolioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		45D08D7F2B55DF7200EA63B1 /* SkillsCollapse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsCollapse.swift; sourceTree = "<group>"; };
 		45D08D812B55F17C00EA63B1 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		45D08D832B55F46400EA63B1 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
+		45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +306,8 @@
 		45A92E322B570F84009F8375 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				45328A402B535D2C008548DA /* SearchAndFilterBar.swift */,
+				45328A472B542AFE008548DA /* SearchView.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -339,8 +343,6 @@
 			isa = PBXGroup;
 			children = (
 				45328A3B2B535624008548DA /* ExploreView.swift */,
-				45328A402B535D2C008548DA /* SearchAndFilterBar.swift */,
-				45328A472B542AFE008548DA /* SearchView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,6 +363,7 @@
 				45D08D7F2B55DF7200EA63B1 /* SkillsCollapse.swift */,
 				45D08D812B55F17C00EA63B1 /* ExperienceView.swift */,
 				45D08D832B55F46400EA63B1 /* ExperiencesView.swift */,
+				45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */,
 			);
 			path = SupportViews;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 			files = (
 				45A92E2F2B56CE15009F8375 /* SelectSideView.swift in Sources */,
 				45328A432B536159008548DA /* ListingDetailView.swift in Sources */,
+				45E2A88F2B6164090020E52D /* PortfolioButtonView.swift in Sources */,
 				45328A482B542AFE008548DA /* SearchView.swift in Sources */,
 				45328A4A2B545B27008548DA /* ProfileView.swift in Sources */,
 				45328A082B5343B0008548DA /* ContentView.swift in Sources */,

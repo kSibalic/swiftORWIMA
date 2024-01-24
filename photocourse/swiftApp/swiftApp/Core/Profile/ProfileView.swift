@@ -21,6 +21,9 @@ struct ProfileView: View {
                     HeaderView()
                         .padding(.top, 24)
                     
+                    PortfolioButtonView()
+                        .padding(.top, 24)
+                    
                     SkillsCollapse(skills: Author().skills, width: UIScreen.main.bounds.width - 48)
                         .padding(.top, 24)
                     
