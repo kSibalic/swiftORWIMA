@@ -12,12 +12,10 @@ struct SplashScreenView: View {
         else {
             VStack {
                 VStack {
-                    Image(systemName: "camera.fill")
-                        .font(.system(size: 80))
-                        .foregroundColor(.orange)
-                    Text("PhotoCourse")
-                        .font(Font.custom("Baskerville-Bold", size: 26))
-                        .foregroundColor(.black.opacity(0.80))
+                    Image("slash")
+                        .resizable()
+                        .frame(width: 150, height: 150)
+
                 }
                 .scaleEffect(size)
                 .opacity(opacity)
