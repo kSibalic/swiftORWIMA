@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct swiftAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ExploreView()
+            SplashScreenView()
+                .modelContainer(for: WorkflowManager.self)
         }
     }
 }

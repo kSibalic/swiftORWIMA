@@ -135,7 +135,7 @@ struct ListingDetailView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal, 50)
-                
+
                 Spacer()
                 ChosenSideView(selectedSide: selectedSide)
                 Spacer()

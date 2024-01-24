@@ -20,6 +20,12 @@ struct MainTabView: View {
                     Label("Favorites", systemImage: "heart")
                 }
             
+            
+            WorkflowManagerView()
+                .tabItem {
+                    Label("Manager", systemImage: "list.clipboard.fill")
+                }
+            
             ProfileView()
                 .tabItem {
                     Label("Author", systemImage: "person")
