@@ -10,10 +10,10 @@ import SwiftUI
 struct ListingImageCarouselView: View {
     
     var images = [
-        "listing-3",
-        "listing-2",
-        "listing-1",
-        "listing-4",
+        "gimbal",
+        "iso",
+        "drone",
+        "lightroom",
     ]
     
     var body: some View {

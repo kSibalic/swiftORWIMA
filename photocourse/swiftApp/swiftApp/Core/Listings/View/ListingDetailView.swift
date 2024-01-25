@@ -221,5 +221,5 @@ struct ListingDetailView: View {
 }
 
 #Preview {
-    ListingDetailView(course: DeveloperPreview.shared.course[1])
+    ListingDetailView(course: DeveloperPreview.shared.course[0])
 }
