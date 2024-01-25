@@ -10,7 +10,13 @@ import SwiftUI
 struct ListingDetailView: View {
     
     @Environment(\.dismiss) var dismiss
+    
     @State private var selectedSide: ImageSide = .low
+    @State private var selectedSideDrone: ImageSideDrone = .fpv
+    @State private var selectedSideGimbal: ImageSideGimbal = .axis3
+    @State private var selectedSideLightroom: ImageSideLightroom = .cl
+    @State private var selectedSideRule: ImageSideRule = .ruleDone
+    
     let course: Course
     
     var body: some View {
@@ -125,20 +131,87 @@ struct ListingDetailView: View {
             Divider()
             
             VStack(alignment: .leading, spacing: 16) {
-                Text("Real world example:")
-                    .font(.headline)
                 
-                Picker("Choose ISO", selection: $selectedSide) {
-                    ForEach(ImageSide.allCases, id: \.self) {
-                        Text($0.rawValue)
+                if(course.title == "Drone Flying") {
+                    Text("Real world example:")
+                        .font(.headline)
+                    
+                    Picker("Choose drone type", selection: $selectedSideDrone) {
+                        ForEach(ImageSideDrone.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
                     }
-                }
-                .pickerStyle(SegmentedPickerStyle())
-                .padding(.horizontal, 50)
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 50)
 
-                Spacer()
-                ChosenSideView(selectedSide: selectedSide)
-                Spacer()
+                    Spacer()
+                    ChosenSideViewDrone(selectedSide: selectedSideDrone)
+                    Spacer()
+                }
+                else if(course.title == "ISO Sensitivity") {
+                    Text("Real world example:")
+                        .font(.headline)
+                    
+                    Picker("Choose ISO", selection: $selectedSide) {
+                        ForEach(ImageSide.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 50)
+
+                    Spacer()
+                    ChosenSideView(selectedSide: selectedSide)
+                    Spacer()
+                }
+                else if(course.title == "Gimbal Usage") {
+                    Text("Real world example:")
+                        .font(.headline)
+                    
+                    Picker("Choose gimbal type", selection: $selectedSideGimbal) {
+                        ForEach(ImageSideGimbal.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 50)
+
+                    Spacer()
+                    ChosenSideViewGimbal(selectedSide: selectedSideGimbal)
+                    Spacer()
+                }
+                else if(course.title == "Lightroom Editing") {
+                    Text("Real world example:")
+                        .font(.headline)
+                    
+                    Picker("Choose Lightrom version", selection: $selectedSideLightroom) {
+                        ForEach(ImageSideLightroom.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 50)
+
+                    Spacer()
+                    ChosenSideViewLightroom(selectedSide: selectedSideLightroom)
+                    Spacer()
+                }
+                else {
+                    Text("Real world example:")
+                        .font(.headline)
+                    
+                    Picker("Follow the rule or not?", selection: $selectedSideRule) {
+                        ForEach(ImageSideRule.allCases, id: \.self) {
+                            Text($0.rawValue)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    .padding(.horizontal, 50)
+
+                    Spacer()
+                    ChosenSideViewRule(selectedSide: selectedSideRule)
+                    Spacer()
+                }
             }
             .padding()
             .padding(.bottom, 60)
@@ -148,5 +221,5 @@ struct ListingDetailView: View {
 }
 
 #Preview {
-    ListingDetailView(course: DeveloperPreview.shared.course[0])
+    ListingDetailView(course: DeveloperPreview.shared.course[1])
 }

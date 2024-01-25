@@ -41,6 +41,14 @@
 		45D08D822B55F17C00EA63B1 /* ExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D08D812B55F17C00EA63B1 /* ExperienceView.swift */; };
 		45D08D842B55F46400EA63B1 /* ExperiencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45D08D832B55F46400EA63B1 /* ExperiencesView.swift */; };
 		45E2A88F2B6164090020E52D /* PortfolioButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */; };
+		45E2A8942B61CA7D0020E52D /* ChosenSideViewDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A8932B61CA7D0020E52D /* ChosenSideViewDrone.swift */; };
+		45E2A8962B61CA8B0020E52D /* SelectSideViewDrone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A8952B61CA8B0020E52D /* SelectSideViewDrone.swift */; };
+		45E2A8982B61CFF20020E52D /* ChosenSideViewGimbal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A8972B61CFF20020E52D /* ChosenSideViewGimbal.swift */; };
+		45E2A89A2B61D0040020E52D /* SelectedSideViewGimbal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A8992B61D0040020E52D /* SelectedSideViewGimbal.swift */; };
+		45E2A89C2B61D1AB0020E52D /* ChosenSideViewLightroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A89B2B61D1AB0020E52D /* ChosenSideViewLightroom.swift */; };
+		45E2A89E2B61D1B70020E52D /* SelectedSideViewLightroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A89D2B61D1B70020E52D /* SelectedSideViewLightroom.swift */; };
+		45E2A8A02B61D2D80020E52D /* ChosenSideViewRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A89F2B61D2D80020E52D /* ChosenSideViewRule.swift */; };
+		45E2A8A22B61D2E40020E52D /* SelectedSideViewRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E2A8A12B61D2E40020E52D /* SelectedSideViewRule.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +106,14 @@
 		45D08D812B55F17C00EA63B1 /* ExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceView.swift; sourceTree = "<group>"; };
 		45D08D832B55F46400EA63B1 /* ExperiencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperiencesView.swift; sourceTree = "<group>"; };
 		45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioButtonView.swift; sourceTree = "<group>"; };
+		45E2A8932B61CA7D0020E52D /* ChosenSideViewDrone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSideViewDrone.swift; sourceTree = "<group>"; };
+		45E2A8952B61CA8B0020E52D /* SelectSideViewDrone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSideViewDrone.swift; sourceTree = "<group>"; };
+		45E2A8972B61CFF20020E52D /* ChosenSideViewGimbal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSideViewGimbal.swift; sourceTree = "<group>"; };
+		45E2A8992B61D0040020E52D /* SelectedSideViewGimbal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSideViewGimbal.swift; sourceTree = "<group>"; };
+		45E2A89B2B61D1AB0020E52D /* ChosenSideViewLightroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSideViewLightroom.swift; sourceTree = "<group>"; };
+		45E2A89D2B61D1B70020E52D /* SelectedSideViewLightroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSideViewLightroom.swift; sourceTree = "<group>"; };
+		45E2A89F2B61D2D80020E52D /* ChosenSideViewRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChosenSideViewRule.swift; sourceTree = "<group>"; };
+		45E2A8A12B61D2E40020E52D /* SelectedSideViewRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedSideViewRule.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +339,7 @@
 		45A92E382B57136C009F8375 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				45E2A8922B61CA540020E52D /* SideHelper */,
 				45328A3E2B535766008548DA /* ListingView.swift */,
 				45328A422B536159008548DA /* ListingDetailView.swift */,
 				45A92E2E2B56CE15009F8375 /* SelectSideView.swift */,
@@ -366,6 +383,21 @@
 				45E2A88E2B6164090020E52D /* PortfolioButtonView.swift */,
 			);
 			path = SupportViews;
+			sourceTree = "<group>";
+		};
+		45E2A8922B61CA540020E52D /* SideHelper */ = {
+			isa = PBXGroup;
+			children = (
+				45E2A8932B61CA7D0020E52D /* ChosenSideViewDrone.swift */,
+				45E2A8952B61CA8B0020E52D /* SelectSideViewDrone.swift */,
+				45E2A8972B61CFF20020E52D /* ChosenSideViewGimbal.swift */,
+				45E2A8992B61D0040020E52D /* SelectedSideViewGimbal.swift */,
+				45E2A89B2B61D1AB0020E52D /* ChosenSideViewLightroom.swift */,
+				45E2A89D2B61D1B70020E52D /* SelectedSideViewLightroom.swift */,
+				45E2A89F2B61D2D80020E52D /* ChosenSideViewRule.swift */,
+				45E2A8A12B61D2E40020E52D /* SelectedSideViewRule.swift */,
+			);
+			path = SideHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,13 +531,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				45A92E2F2B56CE15009F8375 /* SelectSideView.swift in Sources */,
+				45E2A8982B61CFF20020E52D /* ChosenSideViewGimbal.swift in Sources */,
 				45328A432B536159008548DA /* ListingDetailView.swift in Sources */,
+				45E2A8942B61CA7D0020E52D /* ChosenSideViewDrone.swift in Sources */,
+				45E2A8962B61CA8B0020E52D /* SelectSideViewDrone.swift in Sources */,
 				45E2A88F2B6164090020E52D /* PortfolioButtonView.swift in Sources */,
 				45328A482B542AFE008548DA /* SearchView.swift in Sources */,
 				45328A4A2B545B27008548DA /* ProfileView.swift in Sources */,
 				45328A082B5343B0008548DA /* ContentView.swift in Sources */,
 				45A10ADD2B6040EC002C41E7 /* UpdateWorkflow.swift in Sources */,
+				45E2A8A22B61D2E40020E52D /* SelectedSideViewRule.swift in Sources */,
 				45D08D842B55F46400EA63B1 /* ExperiencesView.swift in Sources */,
+				45E2A8A02B61D2D80020E52D /* ChosenSideViewRule.swift in Sources */,
+				45E2A89C2B61D1AB0020E52D /* ChosenSideViewLightroom.swift in Sources */,
 				45D08D802B55DF7200EA63B1 /* SkillsCollapse.swift in Sources */,
 				45328A412B535D2C008548DA /* SearchAndFilterBar.swift in Sources */,
 				45328A4C2B545D36008548DA /* MainTabView.swift in Sources */,
@@ -514,6 +552,7 @@
 				45328A3F2B535766008548DA /* ListingView.swift in Sources */,
 				4594788B2B602ED000CA2160 /* WorkflowManagerView.swift in Sources */,
 				45328A062B5343B0008548DA /* swiftAppApp.swift in Sources */,
+				45E2A89E2B61D1B70020E52D /* SelectedSideViewLightroom.swift in Sources */,
 				45D08D822B55F17C00EA63B1 /* ExperienceView.swift in Sources */,
 				45328A4E2B545D69008548DA /* FavoritesView.swift in Sources */,
 				45A92E432B571D4E009F8375 /* ExploreCourse.swift in Sources */,
@@ -521,6 +560,7 @@
 				45A92E3C2B571868009F8375 /* DeveloperPreview.swift in Sources */,
 				459478882B602C5A00CA2160 /* WorkflowManager.swift in Sources */,
 				45A92E3A2B571389009F8375 /* Course.swift in Sources */,
+				45E2A89A2B61D0040020E52D /* SelectedSideViewGimbal.swift in Sources */,
 				45A92E312B56CEBC009F8375 /* ChosenSideView.swift in Sources */,
 				45A92E412B571D06009F8375 /* ExploreViewModel.swift in Sources */,
 				45328A3C2B535624008548DA /* ExploreView.swift in Sources */,

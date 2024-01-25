@@ -8,41 +8,54 @@
 import SwiftUI
 
 struct ListingView: View {
-    let course:  Course
+    
+    let course: Course
     
     var body: some View {
-        VStack(spacing: 8) {
-            //images
-            
-            //ListingImageCarouselView()
-            //   .frame(height: 320)
-            //  .clipShape(RoundedRectangle(cornerRadius: 10))
-            
-            Image("\(course.imageUrl)")
-                .resizable()
-                .frame(height: 320)
-                .clipShape(RoundedRectangle(cornerRadius: 10))
-            
-            //details
-            HStack(alignment: .top) {
-                //description
-                VStack(alignment: .leading) {
-                    Text("\(course.title)")
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.black)
+        ZStack(alignment: .bottomTrailing) {
+            VStack(spacing: 8) {
+                
+                //images
+                //ListingImageCarouselView()
+                //   .frame(height: 320)
+                //  .clipShape(RoundedRectangle(cornerRadius: 10))
+                
+                Image("\(course.imageUrl)")
+                    .resizable()
+                    .frame(height: 320)
+                    .clipShape(RoundedRectangle(cornerRadius: 10))
+                
+                //details
+                HStack(alignment: .top) {
+                    //description
+                    VStack(alignment: .leading) {
+                        Text("\(course.title)")
+                            .fontWeight(.semibold)
+                            .foregroundStyle(.black)
+                        
+                        
+                        Text("Difficulty: \(course.difficulty)")
+                            .foregroundStyle(.gray)
+                        
+                        Text("Author: \(course.authorName)")
+                            .foregroundColor(.gray)
+                    }
                     
+                    Spacer()
                     
-                    Text("Difficulty: \(course.difficulty)")
-                        .foregroundStyle(.gray)
-                    
-                    Text("Author: \(course.authorName)")
-                        .foregroundColor(.gray)
                 }
-                
-                Spacer()
-                
+                .font(.footnote)
             }
-            .font(.footnote)
+            
+
+            Button(action: {
+            }) {
+                Image(systemName: "heart")
+                    .resizable()
+                    .frame(width: 22, height: 20)
+                    .foregroundColor(.orange)
+                    .padding(20)
+            }
         }
     }
 }

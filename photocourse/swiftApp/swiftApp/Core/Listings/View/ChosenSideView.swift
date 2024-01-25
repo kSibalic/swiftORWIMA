@@ -10,8 +10,6 @@ import SwiftUI
 enum ImageSide: String, CaseIterable {
     case low = "Low"
     case high = "High"
-    case fpv = "FPV"
-    case cine = "Cine"
 }
 
 struct ChosenSideView: View {
@@ -24,10 +22,6 @@ struct ChosenSideView: View {
             SelectSideView(imageName: "iso100")
         case .high:
             SelectSideView(imageName: "iso6400")
-        case .fpv:
-            SelectSideView(imageName: "fpv")
-        case .cine:
-            SelectSideView(imageName: "cine")
         }
     }
 }

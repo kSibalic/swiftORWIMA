@@ -15,15 +15,17 @@ struct MainTabView: View {
                     Label("Explore", systemImage: "camera")
                 }
             
+            /*
             FavoritesView()
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }
+             */
             
             
             WorkflowManagerView()
                 .tabItem {
-                    Label("Manager", systemImage: "list.clipboard.fill")
+                    Label("Workflow Manager", systemImage: "list.clipboard.fill")
                 }
             
             ProfileView()
